@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  dev-db:
+    image: postgres:alpine
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: skinissues
+      POSTGRES_PASSWORD: skindex2023
+      POSTGRES_DB: {{cookiecutter.db_name}}
+    networks:
+      - skindex
+networks:
+  skindex:
