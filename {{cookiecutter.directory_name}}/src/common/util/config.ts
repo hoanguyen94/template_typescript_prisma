@@ -27,18 +27,15 @@ export default () => ({
       secretAccessKey: SECRETACCESSKEY,
     },
     publishedTopicArn:
-      PUBLISHED_TOPIC_ARN ||
-      'arn:aws:sns:ap-southeast-1:250422108324:user-product-list',
+      PUBLISHED_TOPIC_ARN || '',
     queueURL:
-      QUEUEURL ||
-      'https://sqs.ap-southeast-1.amazonaws.com/250422108324/Queues-for-User-Skin-Issues',
+      QUEUEURL || '',
     subscribedTopicArn:
-      SUBSCRIBED_TOPIC_ARN ||
-      'arn:aws:sns:ap-southeast-1:250422108324:user-skin-issues',
+      SUBSCRIBED_TOPIC_ARN || '',
   },
   database_url:
     DATABASE_URL ||
-    'postgresql://skinissues:skindex2023@localhost:5434/payments?schema=public',
+    'postgresql://{{cookiecutter.postgres_user}}:{{cookiecutter.postgres_password}}@localhost:{{cookiecutter.db_port}}/{{cookiecutter.db_name}}?schema=public',
   port: PORT || 3334,
   broker_url: BROKERRURL || 'localhost:9092',
   redisUrl: REDISURL || 'redis://:skindex2023@localhost:6379',

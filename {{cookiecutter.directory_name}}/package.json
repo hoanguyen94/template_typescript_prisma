@@ -1,8 +1,8 @@
 {
-  "name": "${{cookiecutter.directory_name}}",
+  "name": "{{cookiecutter.directory_name}}",
   "version": "0.0.1",
-  "description": "${{cookiecutter.description}}",
-  "author": "${{cookiecutter.author}}",
+  "description": "{{cookiecutter.description}}",
+  "author": "{{cookiecutter.author}}",
   "private": true,
   "license": "SEE LICENSE IN license",
   "scripts": {

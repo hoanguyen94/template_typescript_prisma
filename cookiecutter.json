@@ -1,6 +1,9 @@
 {
   "directory_name": "payment",
-  "db_name": "payment",
   "description": "payment service",
+  "db_name": "payment",
+  "db_port": 5432,
+  "postgres_user": "user",
+  "postgres_password": "password",
   "author": "Hoa Nguyen"
 }
